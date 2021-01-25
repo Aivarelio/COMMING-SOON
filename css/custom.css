@@ -139,3 +139,12 @@ width: 100%;
      flex-direction: column;
     }
 }
+
+footer .fa{
+    font-size: 25px;
+    color: #fff;
+}
+.fa {
+    display: inline-block;
+
+}
