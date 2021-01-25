@@ -148,3 +148,22 @@ footer .fa{
     display: inline-block;
 
 }
+
+.socials {
+    border-bottom: 2px solid;
+    padding: 10px 0;
+}
+
+.socials > .fa{
+    font-size: 20px;
+    width: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.socials > .fa:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
