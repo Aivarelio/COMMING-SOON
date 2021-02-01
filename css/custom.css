@@ -87,11 +87,29 @@ main .block-description > a:hover {
 
 /* footer section */
 
-footer {
+footer.container {
     text-align: center;
     line-height: 30px;
-    color: #fff8;
+    color: #fff9;
+    padding-top: 0;
 }
+.container > .socials {
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+}
+.socials > .fa {
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.socials > .fa:hover {
+    background-color: #fff;
+    color: #03a9f4;
+}
+
 footer a {
     color: #fff;
     text-decoration: none;
@@ -108,16 +126,15 @@ footer a {
     justify-content: center;
     gap: 0 20px;
 }
-
 .bottom-texts > p {
     position: relative;
 }
 .bottom-texts > p::before {
     display: inline-block;
     content: '';
-    background-color: #fff;
     width: 2px;
     height: 18px;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: -11px;
@@ -126,44 +143,20 @@ footer a {
 .bottom-texts > p:first-of-type::before {
     display: none;
 }
+
 .bottom-texts a:hover {
     text-decoration: underline;
 }
-footer > .short-row {
-display: inline-block;
-width: 100%;
+footer > .short-row > p {
+    display: inline-block;
+    width: 100%;
 }
 
 @media (max-width: 700px) {
-   .bottom-texts {
-     flex-direction: column;
+    .bottom-texts {
+        flex-direction: column;
     }
-}
-
-footer .fa{
-    font-size: 25px;
-    color: #fff;
-}
-.fa {
-    display: inline-block;
-
-}
-
-.socials {
-    border-bottom: 2px solid;
-    padding: 10px 0;
-}
-
-.socials > .fa{
-    font-size: 20px;
-    width: 40px;
-    line-height: 40px;
-    color: #fff;
-    border-radius: 50%;
-    transition: all 0.5s;
-}
-
-.socials > .fa:hover {
-    background-color: #fff;
-    text-decoration: none;
+    .bottom-texts > p::before {
+        display: none;
+    }
 }
