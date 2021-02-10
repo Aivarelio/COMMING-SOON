@@ -20,3 +20,9 @@
     min-height: 94px;
     max-height: 262px;
 }
+.form > .label {
+    display: inline-block;
+    float: left;
+    font-size: 0;
+
+}
